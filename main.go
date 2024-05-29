@@ -1,10 +1,11 @@
 package main
 
 import (
-	"fmt"
-	//"github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	fmt.Println("Testing Go Rest Api ..")
+	server := gin.Default()
+
+	server.Run(":8080") // localhost:8080
 }
